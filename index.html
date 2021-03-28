@@ -51,12 +51,14 @@
 
     <!-- Main section -->
     <main>
+
       <section class="section-hero section">
         <div class="container">
           <h1 class="title">Эффективные решения <br />для вашего бизнеса</h1>
-          <button class="primary">Заказать услугу</button>
+          <button data-modal-open class="primary">Заказать услугу</button>
         </div>
       </section>
+
       <section class="principles container section">
         <h2 class="principles-title visually-hidden">Наши принципы</h2>
         <ul class="our-principles list flexy">
@@ -78,20 +80,37 @@
           </li>
         </ul>
       </section>
+
       <section class="our-work container section">
         <h2 class="works-title">Чем мы занимаемся</h2>
         <ul class="work-list list flexy">
           <li class="item">
-            <img src="./images/note1.jpg" alt="note1" width="370" />
+            <div class="works-thumb">
+              <img class="works-img" src="./images/note1.jpg" alt="note1" width="370" />
+              <div class="our-works-img-bg-box">
+                <p class="our-works-img-bg-txt">Десктопные приложения</p>
+              </div>
+            </div>
           </li>
           <li class="item">
-            <img src="./images/note2.jpg" alt="note2" width="370" />
+            <div class="works-thumb">
+              <img class="works-img" src="./images/note2.jpg" alt="note1" width="370" />
+              <div class="our-works-img-bg-box">
+                <p class="our-works-img-bg-txt">Мобильные приложения</p>
+              </div>
+            </div>
           </li>
           <li class="item">
-            <img src="./images/note3.jpg" alt="note3" width="370" />
+            <div class="works-thumb">
+              <img class="works-img" src="./images/note3.jpg" alt="note1" width="370" />
+              <div class="our-works-img-bg-box">
+                <p class="our-works-img-bg-txt">Дизайнерские решения</p>
+              </div>
+            </div>
           </li>
         </ul>
       </section>
+
       <section class="our-team section">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
@@ -239,6 +258,7 @@
           </ul>
         </div>
       </section>
+
       <section class="clients">
         <div class="container">
           <h2 class="clients-title">Постоянные клиенты</h2>
@@ -288,6 +308,13 @@
           </ul>
         </div>
       </section>
+
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button data-modal-close class="cloze-hero-modal-btn">x</button>
+        </div>
+      </div>
+
     </main>
 
     <!-- Footer section -->
@@ -320,5 +347,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
