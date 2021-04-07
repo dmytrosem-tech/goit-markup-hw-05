@@ -691,12 +691,16 @@ a:focus {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 1500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop .is-hidden {
+.backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -200%);
 }
 
 .modal {
@@ -710,10 +714,6 @@ a:focus {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal .is-hidden {
-  transform: translate(-50%, -200%);
 }
 
 /* FOOTER section*/
